@@ -89,7 +89,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv)
 
   //FETCH THE DATA FROM THE SERVER
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://openaijs.onrender.com', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ prompt: data.get('prompt') })
